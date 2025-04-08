@@ -1,0 +1,55 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Alpha 8bit Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="{% static 'imagenes/favicon.ico' %}">
+  
+  <link rel="stylesheet" href="{% static 'Style.css' %}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Jersey+10&family=Pixelify+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="wallpaper">
+
+    <h1>Alpha 8bit Games</h1>
+
+    <div>
+      <video autoplay loop muted>
+        <source src="{% static 'imagenes/cool.mp4' %}" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="capa"></div>
+
+    <br><br>
+    <section>
+      <h1 class="Welcome">
+        Welcome (∩︵∩) (｡◕‿◕｡) (⊙_◎)
+      </h1>
+    </section>
+
+    <div class="pomo">
+      <section class="world">
+        <h2>System.out.println("Hello world");</h2>
+        <p>"This is a web page aimed at offering publishing services for small,</p>
+        <p>non-profit developers. This way, we support more people in living their dreams."</p>
+        <a href="/game_page/src/app/video-game/video-game.component.html">
+          <button class="botton-design">Learn more.</button>
+        </a>
+      </section>
+    </div>
+
+  </div>
+  <app-root></app-root>
+</body>
+</html>
