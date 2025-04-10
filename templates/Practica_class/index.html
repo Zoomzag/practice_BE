@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="{% static 'imagenes/favicon.ico' %}">
   
+
   <link rel="stylesheet" href="{% static 'Style.css' %}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +22,7 @@
 <body>
   <div id="wallpaper">
 
-    <h1>Alpha 8bit Games</h1>
+    <h1>Alpha 8bit Movies</h1>
 
     <div>
       <video autoplay loop muted>
@@ -43,7 +44,7 @@
         <h2>System.out.println("Hello world");</h2>
         <p>"This is a web page aimed at offering publishing services for small,</p>
         <p>non-profit developers. This way, we support more people in living their dreams."</p>
-        <a href="/game_page/src/app/video-game/video-game.component.html">
+        <a href="{% url 'games' %}">
           <button class="botton-design">Learn more.</button>
         </a>
       </section>

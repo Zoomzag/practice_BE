@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+body {
+    background-color: var(--tekhelet);
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+/*36, 35, 35)*/
+.pixel {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Colores */
+:root {
+    --blush: #DD4A7D;
+    --tekhelet: #602685;
+    --plum: #A02C98;
+    --midnight: #242169;
+    --magenta-haze: #A83F78;
+    --shocking-pink: #E84BB4;
+    --white: #f9f9f9;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--midnight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    font-family: "Jersey 10", sans-serif;
+    color: var(--white);
+}
+
+.nav-left .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.nav-center .search-box {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--plum);
+    color: white;
+    outline: none;
+    font-family: "Jersey 10", sans-serif;
+}
+
+.nav-right a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: "Jersey 10", sans-serif;
+}
+
+.nav-right a:hover {
+    color: var(--shocking-pink);
+}
+
+
+/*contenido publicitario*/
+
+.text{
+    text-align: justify;
+    color: violet;
+}

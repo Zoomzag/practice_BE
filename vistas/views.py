@@ -4,12 +4,11 @@ def inicio(request):
     return render(request, 'Practica_class/index.html')
 
 def about(request):
-    return render(request, 'Practica/about.html')
+    return render(request, 'Practica_class/about.html')
 
 def about(request):
-    return render(request, 'Practica/contact.html')
+    return render(request, 'Practica_class/contact.html')
 
-def about(request):
-    return render(request, 'Practica/games.html')
-
+def games(request):
+    return render(request, 'Practica_class/games.html')
 
