@@ -1,98 +1,171 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha 8bit Games</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha 8bit Movies</title>
 
-    <!--Boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <!--css-->
-    <link rel="stylesheet" href="{% static 'Plantilla.css' %}">
-
-
-
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     
+  <!--css-->
+  <link rel="stylesheet" href="{% static 'Plantilla.css' %}">
+
+
+
+
 </head>
 
 <body>
-    <!--JavaScript de Boostrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <!--JavaScript de Boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 
-    <!--barra de navegacion-->
-    <nav class="navbar">
-        <div class="nav-left">
-            <span class="logo">Alpha 8bit Movies</span>
-        </div>
-        <div class="nav-center">
-            <input type="text" class="search-box" placeholder="Buscar...">
-        </div>
-        <div class="nav-right">
-            <a href="">Inicio</a>
-            <a href="">Acerca</a>
-            <a href="">Contacto</a>
-            <a href="">Juegos</a>
-        </div>
-    </nav>
-    <!--Carrusel de imagenes-->
-    <div>
-        
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="{% static 'imagenes/blade2.jpeg' %}" class="d-block w-100" width="1280" height="720">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'imagenes/1073863.png' %}" class="d-block w-100" width="1280" height="720">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'imagenes/E.T_movie.jpg' %}" class="d-block w-100" width="1280" height="720">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+  <!--barra de navegacion-->
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="logo">Alpha 8bit Movies</span>
+    </div>
+    <div class="nav-center">
+      <input type="text" class="search-box" placeholder="Buscar...">
+    </div>
+    <div class="nav-right">
+      <a href="">Inicio</a>
+      <a href="">Acerca</a>
+      <a href="">Contacto</a>
+      <a href="">sign in/ sign up</a>
+    </div>
+  </nav>
+  <!--Carrusel de imagenes-->
+  <div>
+
+    {% load static %}
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'imagenes/blade2.jpeg' %}" class="d-block w-100" width="1280" height="600" alt="Blade">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Blade Runner </h5>
+            <p>Enjoy only on Alpha 8bit Movie</p>
           </div>
-    </div>
-    <br><br>
-    <div>
-        <section>
-            <table class="t1">
-                <tr>
-                    <td style="padding: 5%;">
-                        <h4 class="text">
-                            Enjoy our 80s movie catalog!
-We take pride in being the leading streaming platform with the largest collection of movies from the 70s, 80s, and 90s. Whether you're feeling nostalgic or discovering these classics for the first time, you're in for a cinematic treat.
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'imagenes/1073863.png' %}" class="d-block w-100" width="1280" height="600" alt="Retro city">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Akira</h5>
+            <p>Enjoy only on Alpha 8bit Movie</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'imagenes/E.T_movie.jpg' %}" class="d-block w-100" width="1280" height="600" alt="E.T.">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>E.T.</h5>
+            <p>Enjoy only on Alpha 8bit Movie</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>    
+  </div>
+  <br><br>
+  <div>
+    <section>
+      <table class="t1">
+        <tr>
+          <td style="padding: 5%;">
+            <h4 class="text">
+              Enjoy our 80s movie catalog!
+              We take pride in being the leading streaming platform with the largest collection of movies from the 70s,
+              80s, and 90s. Whether you're feeling nostalgic or discovering these classics for the first time, you're in
+              for a cinematic treat.
 
-You can start watching for free with our ad-supported plan, or enjoy an uninterrupted experience by subscribing to our premium plan for only $99 MXN per month — or save even more with our annual plan for just $700 MXN per year.
+              You can start watching for free with our ad-supported plan, or enjoy an uninterrupted experience by
+              subscribing to our premium plan for only $99 MXN per month — or save even more with our annual plan for
+              just $700 MXN per year.
 
-Relive the magic. Rewind the decades. Only here.
+              Relive the magic. Rewind the decades. Only here.
 
 
-                        </h4>
-                    </td>
-                    <td style="padding: 5%;">
-                        <h4 class="text">
-                            In our catalog, you'll find timeless classics like E.T. the Extra-Terrestrial, Blade Runner, and Alien,
-alongside iconic Latin American cinema from the 1980s. Whether you're into science fiction, heartwarming adventures, or regional cinematic gems, there's something for every film lover.
+            </h4>
+          </td>
+          <td>
 
-Rediscover the golden age of movies — all in one place.
-                        </h4>
-                    </td>
-                </tr>
-            </table>
+            <img src="{%static 'imagenes/promo.png'%}" width="612" height="408">
+
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 5%;">
+            <img src="{%static 'imagenes/promo3.png'%}" width="450" height="450">
+          </td>
+          <td style="padding: 5%;">
+            <h4 class="text">
+              In our catalog, you'll find timeless classics like E.T. the Extra-Terrestrial, Blade Runner, and Alien,
+              alongside iconic Latin American cinema from the 1980s. Whether you're into science fiction, heartwarming
+              adventures, or regional cinematic gems, there's something for every film lover.
+
+              Rediscover the golden age of movies — all in one place.
+            </h4>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </div>
+  <div>
+    <!--aqui va los servicios-->
+    <section>
+
+      <div>
+        <h1 class="header">Plans & Services </h1>
+        <br>
+        <section class="main">
+          <div class="image-container">
+            <img src="{%static 'imagenes/gratuito.webp'%}" width="290" height="352">
+            <div class="overlay">
+              <div class="te">Free Plan.</div>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="{%static 'imagenes/mensual.webp'%}" width="290" height="352">
+            <div class="overlay">
+              <div class="te"> premium.</div>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="{%static 'imagenes/anual.webp'%}" width="290" height="352">
+            <div class="overlay">
+              <div class="te"> annual plan.</div>
+            </div>
+          </div>
         </section>
-    </div>
+      </div>
+      <br><br>
+      <div>
+        <!-- Footer -->
+        <footer class=" text-light text-center py-3">
+          <p>Síguenos en nuestras redes sociales</p>
+          <a href="#" class="text-light mx-2"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+        </footer>
+      </div>
 </body>
+
 </html>

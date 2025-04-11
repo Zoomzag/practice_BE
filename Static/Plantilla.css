@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
 body {
-    background-color: var(--tekhelet);
+    background-color: #1c1c1d;
     font-family: "Jersey 10", sans-serif;
     font-weight: 600;
     font-style: normal;
+
 }
 /*36, 35, 35)*/
 .pixel {
@@ -30,7 +31,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 24px;
+    padding: 17px 24px;
     font-family: "Jersey 10", sans-serif;
     color: var(--white);
 }
@@ -38,7 +39,7 @@ body {
 .nav-left .logo {
     font-size: 1.8em;
     font-weight: bold;
-    color: var(--white);
+    color: var(--magenta-haze);
 }
 
 .nav-center .search-box {
@@ -63,7 +64,23 @@ body {
 .nav-right a:hover {
     color: var(--shocking-pink);
 }
+/*carrusel*/
+.carousel-caption h5 {
+    font-size: 3.5rem; /* Título más grande */
+    font-family: "Jersey 10", sans-serif; /* Tu tipografía retro */
+    font-weight: 700;
 
+}
+
+.carousel-caption p {
+    font-size: 2.5rem; /* Texto descriptivo más grande */
+    font-family: "Jersey 10", sans-serif;
+}
+.carousel-item img{
+    background-color: #1c1c1d;
+    opacity: 0.5;
+    object-fit: cover;
+}
 
 /*contenido publicitario*/
 
@@ -71,3 +88,47 @@ body {
     text-align: justify;
     color: violet;
 }
+
+.main{
+    display: flex;
+        justify-content: flex-start;
+        justify-content: center;
+        justify-content: flex-end;
+        justify-content: space-between;
+        justify-content: space-around;
+    }
+  
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); 
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .te{
+      color: white;
+      font-size: 1.5em;
+      text-align: center;
+    }
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
+    .image-container {
+      position: relative;
+      overflow: hidden;
+    }
+    .header{
+        text-align: center;
+        color: violet;
+    }
+
+    footer {
+        background-color: var(--midnight);
+    }
+    
