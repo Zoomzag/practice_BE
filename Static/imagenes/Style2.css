@@ -71,7 +71,7 @@ body {
     text-align: center;
   }
   .pomo{
-  padding-top: 350px;
+  padding-top: 150px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,18 +81,6 @@ body {
   position: relative;
   z-index: 2;
   }
-  .pomo2{
-    padding-top: 150px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    margin: auto;
-    position: relative;
-    z-index: 2;
-    }
-    
   
   .world{
     font-family: "Jersey 10", sans-serif;
